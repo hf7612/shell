@@ -1,0 +1,1 @@
+for i in `ps ax|grep "$@"|grep -v grep|awk '{ print $1 }'`; do  pstree -s -p $i;done
